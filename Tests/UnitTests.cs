@@ -32,7 +32,7 @@ namespace GithubActionsLab
 
         // Implement 3 tests per operation, following a similar pattern as above
         [Test]
-        public void Sub_Valid()
+        public void Sub_Valid_WU()
         {
             Assert.AreEqual(3, Program.Subtract("5", "2"));
             Assert.AreEqual(5, Program.Subtract("7", "2"));
@@ -40,7 +40,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Sub_Invalid()
+        public void Sub_Invalid_WU()
         {
             Assert.Throws<FormatException>(() => Program.Subtract("1", "a"));
             Assert.Throws<FormatException>(() => Program.Subtract("a", "1"));
@@ -48,7 +48,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Sub_Null()
+        public void Sub_Null_WU()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Subtract("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Subtract(null, "1"));
@@ -56,7 +56,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Mult_Valid()
+        public void Mult_Valid_WU()
         {
             Assert.AreEqual(3, Program.Multiply("1", "3"));
             Assert.AreEqual(5, Program.Multiply("1", "5"));
@@ -64,7 +64,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Mult_Invalid()
+        public void Mult_Invalid_WU()
         {
             Assert.Throws<FormatException>(() => Program.Multiply("1", "a"));
             Assert.Throws<FormatException>(() => Program.Multiply("a", "1"));
@@ -72,7 +72,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Mult_Null()
+        public void Mult_Null_WU()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Multiply("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Multiply(null, "1"));
@@ -80,7 +80,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Div_Valid()
+        public void Div_Valid_WU()
         {
             Assert.AreEqual(3, Program.Divide("3", "1"));
             Assert.AreEqual(5, Program.Divide("5", "1"));
@@ -88,7 +88,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Div_Invalid()
+        public void Div_Invalid_WU()
         {
             Assert.Throws<FormatException>(() => Program.Divide("1", "a"));
             Assert.Throws<FormatException>(() => Program.Divide("a", "1"));
@@ -96,7 +96,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Div_Null()
+        public void Div_Null_WU()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Divide("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Divide(null, "1"));
